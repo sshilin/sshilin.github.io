@@ -1,13 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <div id="particles-js"></div>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'particlesjs-config-hexagon.json');
-  </script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Oswald", sans-serif;
+        font-size: 1.3rem;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #777;
+      }
+
+      .btn {
+        position: absolute;
+        display: inline-block;
+        border: none;
+        background-color: #fff;
+        border: 1px black solid;
+        color: black;
+        padding: 0.7rem 1.5rem;
+        margin-top: 1rem;
+        text-decoration: none;
+        transition: 0.3s;
+        border-radius: 3px;
+      }
+
+      .btn:hover {
+        background-color: #222;
+        color: #fff;
+      }
+
+      .btn i {
+        font-size: 1.5rem;
+        padding-right: 10px;
+      }
+    </style>
+    <title>Placeholder</title>
+  </head>
+  <body>
+    <main class="container" id="particles-js">
+      <a href="https://github.com/sshilin" class="btn">
+        <i class="fab fa-github"></i><span>https://github.com/sshilin</span></a
+      >
+    </main>
+    <script
+      src="https://kit.fontawesome.com/82f08ec4c2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <script>
+      particlesJS.load("particles-js", "particles.json", function() {});
+    </script>
+  </body>
 </html>
